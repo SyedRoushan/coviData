@@ -1,38 +1,92 @@
-.App {
+html{
+  background-color:rgb(255, 238, 238);
+}
+
+div{
+  background-color:rgb(255, 238, 238);
+  font-family: 'Georama', sans-serif;
+}
+
+.home-container{
+  position: absolute;
+  right: 39%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  margin-top: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 10vh;
+  background: #a2ff99;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links{
+  margin: 0 20px;
+  width: 40%;
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  color: rgb(138, 74, 175);
+  font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-links:hover{
+  transform: scale(1.13);
+  color: rgb(179, 58, 58);
+}
+
+.title{
+  color: rgb(167, 0, 0);
+  font-weight: bolder;
+  transition: transform .2s;
+}
+.title:hover{
+  color:rgb(218, 0, 0);
+  transform: scale(1.02);
+}
+
+span{
+  color: rgb(138, 74, 175);
+}
+
+.card{
+  margin: 30px;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  border-radius:50%;
+  transition: transform .2s;
+}
+
+.card:hover{
+  transform: scale(1.13);
+  background-color: rgb(226, 236, 255);
+}
+
+.card-headings{
+  font-weight: bold;
+  margin: 25px 0;
+  color: rgb(167, 0, 0);
+}
+
+.heading-description{
+  font-size: small;
+  font-weight: bold;
+  color: rgb(138, 74, 175) ;
+}
+
+.state-title{
+  color: rgb(167, 0, 0);
+}
+
+.state-result{
+  color: rgb(104, 44, 139);
+  font-weight: bold;
 }
